@@ -22,7 +22,7 @@ jobs:
     - name: Create branch
       run: |
         git checkout -b feature-branch main
-        git push origin feature-branch
+        git push -f origin feature-branch
     
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
